@@ -225,7 +225,7 @@
         flex-direction: column;
         height: 5vw;
         width: 5vw;
-        background-image: url(./images/timeline.svg);
+        background-image: url(./images/timeline.png);
         align-items: center;
         justify-content: center;
         margin-left: .5vw;
@@ -243,7 +243,7 @@
         height: 5vw;
         width: 5vw;
         margin-left: 1vw;
-        background-image: url(./images/AM\ svg.png);
+        background-image: url(./images/AM_svg.png);
         align-items: center;
         justify-content: center;
         border-radius: 3px;
@@ -424,7 +424,7 @@
         display: flex;
         height: 20vw;
         width: 20vw;
-        background-image: url(./images/timeline.svg);
+        background-image: url(./images/timeline.png);
         align-items: center;
         justify-content: center;
         margin-left: .5vw;
@@ -444,7 +444,7 @@
         height: 20vw;
         width: 20vw;
         margin-left: 1vw;
-        background-image: url(./images/AM\ svg.png);
+        background-image: url(./images/AM_svg.png);
         align-items: center;
         justify-content: center;
         border-radius: 3px;
