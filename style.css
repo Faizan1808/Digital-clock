@@ -39,7 +39,7 @@
         display: flex;
         flex-direction: column;
         background-color: white;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         height: 50vh;
         box-sizing: border-box;
         overflow: hidden;
@@ -128,22 +128,10 @@
     }
     .button:hover{
         border-radius: 5px;
-        font-size: 0px;
+        font-size: 2.5vw;
         padding: 0vw;
         margin-right: 1vw;
-    }
-    .button:hover:after{
-        border-radius: 5px;
-        display:flex ;
-        align-items: center;
-        margin-right: 0vw;
-        justify-content: center;
-        /* content: "Party Time!"; */
-        border: none;
-        font-size: 2.5vw;
-        font-family: 'Manrope', sans-serif;
-        background-image: linear-gradient(247deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
-
+        cursor: pointer;
     }
     #bottomB{
         background-color: #56189cde;
@@ -236,7 +224,7 @@
         align-items: center;
         justify-content: center;
     }
-    #wT{
+    #meridian{
         box-sizing: border-box;
         display: flex;
         font-size: 3vw;
@@ -273,7 +261,7 @@
         box-sizing: border-box;
     }
     #imgM{  
-        width: 35vw;
+        width: 32vw;
         position: relative;
         top: -12px;
     }
@@ -347,25 +335,11 @@
         color: white;
         justify-content: center;
         box-sizing: border-box;
+        cursor: pointer;
         width: 90vw;
         font-family: 'Manrope', sans-serif;
         font-size: 7vw;
         background-image: linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
-    }
-    .button:hover{
-        font-size: 0px; 
-        padding: 0px;
-        margin: 0px;
-    }
-    .button:hover:after{
-        content: "Party Time!";
-        border: none;
-        width: 90vw;
-        font-family: 'Manrope', sans-serif;
-        font-size: 7.5vw;
-        box-sizing: border-box;
-        background-image: linear-gradient(247deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
-
     }
     #bottomB{
         background-color: #974bb8;
