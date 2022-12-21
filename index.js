@@ -51,6 +51,12 @@ function setAlarm() {
     let night = document.getElementById("nightTime").value;
     
     let time = new Date();
+    if (time.getHours() == wake) {
+        document.getElementById("text").innerText = "GOOD MORNING!! WAKE UP !! "
+        document.getElementById("imgM").src = "./images/goodMorning.png"
+        document.getElementById("imgM").style.borderRadius = "2vw"
+        document.getElementById("grab").innerText = "GRAB SOME HEALTHY BREAKFAST!!! "
+    }
     if (time.getHours() == lunch) {
         document.getElementById("text").innerText = "Good Afternoon !! Take Some Sleep "
         document.getElementById("imgM").src = "./images/goodAfter.png"
@@ -61,82 +67,92 @@ function setAlarm() {
         document.getElementById("text").innerText = "Good Evening !! "
         document.getElementById("grab").innerText = "Stop Yawning, Get Some Tea.. It's Just Evening  !! "
         document.getElementById("imgM").src = "./images/goodEvening.png"
+        document.getElementById("imgM").style.borderRadius = "2vw"
     }
     if (time.getHours() == night) {
         document.getElementById("text").innerText = "Good Night !! "
-        document.getElementById("imgM").src = "./images/goodNight.png"
+        document.getElementById("imgM").src = "./images/sleep.jpeg"
         document.getElementById("grab").innerText = "Close Your Eyes and Go to Sleep !! "
+        document.getElementById("imgM").style.borderRadius = "2vw"
+    }
+    if (time.getHours() == night || time.getHours() == nap || time.getHours() == lunch || time.getHours() == wake) {
+        document.getElementById("text").innerText = "GOOD MORNING!! WAKE UP !! "
+        document.getElementById("imgM").src = "./images/goodMorning.png"
+        document.getElementById("imgM").style.borderRadius = "2vw"
+        document.getElementById("grab").innerText = "GRAB SOME HEALTHY BREAKFAST!!! "
     }
 
 
-    function wP() {
+    function wT() {
         let afterW = parseInt(wake) + 1;
         if (wake < 12) {
             if (wake < 11)
-                return wake + "AM - " + afterW + "AM"
-            else return wake + "AM - " + afterW + "PM"
+                return wake + " AM - " + afterW + " AM"
+            else return wake + " AM - " + afterW + " PM"
         }
         else {
             afterW = afterW - 12;
             wake = wake - 12;
             if (wake < 11)
-                return wake + "PM - " + afterW + "PM";
-            else return wake + "PM - " + afterW + "AM";
+                return wake + " PM - " + afterW + " PM";
+            else return wake + " PM - " + afterW + " AM";
         }
     }
-    console.log(wP())
-    function lP() {
+    console.log(wT())
+    function lT() {
         let afterL = parseInt(lunch) + 1;
         if (lunch < 12) {
             if (lunch < 11)
-                return lunch + "AM - " + afterL + "AM"
-            else return lunch + "AM - " + afterL + "PM"
+                return lunch + " AM - " + afterL + " AM"
+            else return lunch + " AM - " + afterL + " PM"
         }
         else {
             afterL = afterL - 12;
             lunch = lunch - 12;
             if (lunch < 11)
-                return lunch + "PM - " + afterL + "PM";
-            else return lunch + "PM - " + afterL + "AM";
+                return lunch + " PM - " + afterL + " PM";
+            else return lunch + " PM - " + afterL + " AM";
         }
     }
 
-    function nP() {
+    function nT() {
         let afterN = parseInt(nap) + 1;
         if (nap < 12) {
             if (nap < 11)
-                return nap + "AM - " + afterN + "AM";
-            else return nap + "AM - " + afterN + "PM";
+                return nap + " AM - " + afterN + " AM";
+            else return nap + " AM - " + afterN + " PM";
         }
         else {
             afterN = afterN - 12;
             nap = nap - 12;
             if (nap < 11)
-                return nap + "PM - " + afterN + "PM";
-            else return nap + "PM - " + afterN + "AM";
+                return nap + " PM - " + afterN + " PM";
+            else return nap + " PM - " + afterN + " AM";
         }
     }
 
-    function ntP() {
+    function ntT() {
         let afternT = parseInt(night) + 1;
         if (night < 12) {
             if (night < 11)
-                return night + "AM - " + afternT + "AM"
-            else return night + "AM - " + afternT + "PM"
+                return night + " AM - " + afternT + " AM"
+            else return night + " AM - " + afternT + " PM"
         }
         else {
             afternT = afternT - 12;
             night = night - 12;
             if (night < 11)
-                return night + "PM - " + afternT + "PM";
-            else return night + "PM - " + afternT + "AM";
+                return night + " PM - " + afternT + " PM";
+            else return night + " PM - " + afternT + " AM";
         }
     }
-    document.getElementById("wakeT").innerText = wP();
-    document.getElementById("lunchT").innerText = lP()
-    document.getElementById("napT").innerText = nP()
-    document.getElementById("nightT").innerText = ntP()
+    document.getElementById("wakeT").innerText = wT();
+    document.getElementById("lunchT").innerText = lT()
+    document.getElementById("napT").innerText = nT()
+    document.getElementById("nightT").innerText = ntT()
 
-    console.log(lP())
+    console.log(lT())
+
+   
 }
 console.log(setAlarm())
