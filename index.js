@@ -75,12 +75,12 @@ function setAlarm() {
         document.getElementById("grab").innerText = "Close Your Eyes and Go to Sleep !! "
         document.getElementById("imgM").style.borderRadius = "2vw"
     }
-    if (time.getHours() == night || time.getHours() == nap || time.getHours() == lunch || time.getHours() == wake) {
-        document.getElementById("text").innerText = "GOOD MORNING!! WAKE UP !! "
-        document.getElementById("imgM").src = "./images/goodMorning.png"
-        document.getElementById("imgM").style.borderRadius = "2vw"
-        document.getElementById("grab").innerText = "GRAB SOME HEALTHY BREAKFAST!!! "
-    }
+    // if (time.getHours() == night && time.getHours() == nap && time.getHours() == lunch && time.getHours() == wake) {
+    //     document.getElementById("text").innerText = "GOOD MORNING!! WAKE UP !! "
+    //     document.getElementById("imgM").src = "./images/goodMorning.png"
+    //     document.getElementById("imgM").style.borderRadius = "2vw"
+    //     document.getElementById("grab").innerText = "GRAB SOME HEALTHY BREAKFAST!!! "
+    // }
 
 
     function wT() {
